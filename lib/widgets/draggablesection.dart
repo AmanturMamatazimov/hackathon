@@ -7,17 +7,18 @@ import 'rowlists.dart';
 import 'searchbar.dart' as searchBarTemp;
 
 class DraggableSection extends StatelessWidget {
-  final double top;
-  final double searchBarHeight;
+  /*final double top;
+  final double searchBarHeight;*/
+  final scrollController;
 
-  DraggableSection({required this.top, required this.searchBarHeight});
+  DraggableSection({required this.scrollController});
 
   @override
   Widget build(BuildContext context) {
     return Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height * 1.1,
-        margin: EdgeInsets.only(top: this.top),
+        // margin: EdgeInsets.only(top: this.top),
         decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.only(
@@ -28,19 +29,15 @@ class DraggableSection extends StatelessWidget {
                 color: Colors.grey,
               )
             ]),
-        child: Stack(
-          children: <Widget>[
-            ListView(children: <Widget>[
-              ExploreRow(),
-              RowWidgets(),
-              RowImages(),
-              RowEvents(),
-              RowLists()
-            ]),
-            searchBarTemp.SearchBar(
-                baseTop: this.top == 0.0 ? 0.0 : this.top,
-                height: this.searchBarHeight),
-          ],
+        child: SingleChildScrollView(
+          controller: scrollController,
+          child: Column(children: <Widget>[
+            ExploreRow(),
+            RowWidgets(),
+            RowImages(),
+            RowEvents(),
+            RowLists()
+          ]),
         ));
   }
 }
