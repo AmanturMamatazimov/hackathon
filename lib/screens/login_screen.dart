@@ -90,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   _saving = false;
                                   Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => LoginScreen()));
                                 });
-                                Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => NavigationHomeScreen()));
+                                Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => FitnessAppHomeScreen()));
                               }
                             } catch (e) {
                               signUpAlert(
