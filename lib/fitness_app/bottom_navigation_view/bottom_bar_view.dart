@@ -255,7 +255,7 @@ class _TabIconsState extends State<TabIcons> with TickerProviderStateMixin {
                               Interval(0.1, 1.0, curve: Curves.fastOutSlowIn))),
                   child: Image.asset(widget.tabIconData!.isSelected
                       ? widget.tabIconData!.selectedImagePath
-                      : widget.tabIconData!.imagePath,width: 40,height: 40,),
+                      : widget.tabIconData!.imagePath,width: 30,height: 30,),
                 ),
                 Positioned(
                   top: 4,

@@ -1,5 +1,6 @@
 import 'package:best_flutter_ui_templates/fitness_app/models/tabIcon_data.dart';
 import 'package:best_flutter_ui_templates/fitness_app/training/training_screen.dart';
+import 'package:best_flutter_ui_templates/screens/home.dart';
 import 'package:flutter/material.dart';
 import '../hotel_booking/hotel_home_screen.dart';
 import 'bottom_navigation_view/bottom_bar_view.dart';
@@ -101,7 +102,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
                 });
               });
             }
-            else if (index == 1 || index == 3) {
+            else if (index == 1) {
               animationController?.reverse().then<dynamic>((data) {
                 if (!mounted) {
                   return;
@@ -109,6 +110,16 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
                 setState(() {
                   tabBody =
                       TrainingScreen(animationController: animationController);
+                });
+              });
+            }else if (index == 3) {
+              animationController?.reverse().then<dynamic>((data) {
+                if (!mounted) {
+                  return;
+                }
+                setState(() {
+                  tabBody =
+                      Home();
                 });
               });
             }

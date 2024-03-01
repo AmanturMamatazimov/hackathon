@@ -7,3 +7,4 @@ const InputDecoration kTextInputDecoration = InputDecoration(
   hintText: '',
   // ),
 );
+const searchBarHeight = 54.0;
