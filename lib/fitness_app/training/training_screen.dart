@@ -122,7 +122,7 @@ class _TrainingScreenState extends State<TrainingScreen>
   }
 
   final Completer<GoogleMapController> _controller =
-  Completer<GoogleMapController>();
+      Completer<GoogleMapController>();
 
   static const CameraPosition _kGooglePlex = CameraPosition(
     target: LatLng(37.42796133580664, -122.085749655962),
@@ -146,19 +146,7 @@ class _TrainingScreenState extends State<TrainingScreen>
       color: FitnessAppTheme.background,
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        body:GoogleMap(
-
-          initialCameraPosition: _kGooglePlex,
-          onMapCreated: (GoogleMapController controller) {
-            _controller.complete(controller);
-          },
-        ),
-        floatingActionButton: FloatingActionButton.extended(
-          onPressed: _goToTheLake,
-          label: const Text('To the lake!'),
-          icon: const Icon(Icons.directions_boat),
-        ),
-        /*Stack(
+        body: Stack(
           children: <Widget>[
             getMainListViewUI(),
             getAppBarUI(),
@@ -166,7 +154,7 @@ class _TrainingScreenState extends State<TrainingScreen>
               height: MediaQuery.of(context).padding.bottom,
             )
           ],
-        ),*/
+        ),
       ),
     );
   }

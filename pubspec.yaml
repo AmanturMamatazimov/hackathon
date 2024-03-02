@@ -35,6 +35,9 @@ dependencies:
     loading_overlay: ^0.3.0
     rflutter_alert: ^2.0.7
     google_maps_flutter: any
+    location: any
+    animated_theme_switcher: any
+    line_awesome_flutter: any
 
 dev_dependencies:
     flutter_test:
@@ -92,6 +95,16 @@ flutter:
           fonts:
               - asset: assets/fonts/Ubuntu-Regular.ttf
               - asset: assets/fonts/Ubuntu-Bold.ttf
+        - family: SFProText
+          fonts:
+              - asset: assets/fonts/SF-Pro-Text-Thin.otf
+                weight: 100
+              - asset: assets/fonts/SF-Pro-Text-Regular.otf
+                weight: 400
+              - asset: assets/fonts/SF-Pro-Text-Medium.otf
+                weight: 500
+              - asset: assets/fonts/SF-Pro-Text-Bold.otf
+                weight: 700
     #
     # For details regarding fonts from package dependencies,
     # see https://flutter.dev/custom-fonts/#from-packages
