@@ -65,4 +65,3 @@ final kLightTheme = ThemeData(
 );
 
 double searchBarHeight = 54.0;
-double searchBarHeight = 54.0;
