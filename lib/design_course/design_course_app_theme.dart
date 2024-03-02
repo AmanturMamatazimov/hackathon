@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 class DesignCourseAppTheme {
   DesignCourseAppTheme._();
 
-  static const Color notWhite = Color(0xFFEDF0F2);
-  static const Color nearlyWhite = Color(0xFFFFFFFF);
-  static const Color nearlyBlue = Color(0xFF00B6F0);
-  static const Color nearlyBlack = Color(0xFF213333);
-  static const Color grey = Color(0xFF3A5160);
-  static const Color dark_grey = Color(0xFF313A44);
+  static const Color notWhite = Color(0xFF9C5C2C); // Light Violet
+  static const Color nearlyWhite = Color(0xFFE0DEDE); // Lavender
+  static const Color nearlyBlue = Color(0xFF7F3B88); // Blue Violet
+  static const Color nearlyBlack = Color(0xFF412759); // Dark Violet
+  static const Color grey = Color(0xFF6B4975); // Medium Violet
 
-  static const Color darkText = Color(0xFF253840);
-  static const Color darkerText = Color(0xFF17262A);
-  static const Color lightText = Color(0xFF4A6572);
-  static const Color deactivatedText = Color(0xFF767676);
-  static const Color dismissibleBackground = Color(0xFF364A54);
-  static const Color chipBackground = Color(0xFFEEF1F3);
-  static const Color spacer = Color(0xFFF2F2F2);
+  static const Color darkText = Color(0xFF3F2A4C); // Dark Plum
+  static const Color darkerText = Color(0xFF291A34); // Dark Indigio
+  static const Color lightText = Color(0xFF785D8C); // Light Plum
+  static const Color deactivatedText = Color(0xFFB2A2C2); // Misty Rose
+
+  static const Color dismissibleBackground = Color(0xFF60437C); // Medium Orchid
+  static const Color chipBackground = Color(0xFFEAEAF2); // Lavender Blush
+  static const Color spacer = Color(0xFFF0EEEE); // Light Steel Blue
 
   static const TextTheme textTheme = TextTheme(
     headline4: display1,
