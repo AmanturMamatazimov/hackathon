@@ -7,6 +7,7 @@ import '../design_course/home_design_course.dart';
 import '../hotel_booking/hotel_home_screen.dart';
 import '../screens/profile.dart';
 import '../screens/welcome.dart';
+import '../screens/welcome.dart';
 import 'bottom_navigation_view/bottom_bar_view.dart';
 import 'fitness_app_theme.dart';
 import 'my_diary/my_diary_screen.dart';

@@ -2,22 +2,23 @@ import 'package:flutter/material.dart';
 
 class FitnessAppTheme {
   FitnessAppTheme._();
-  static const Color nearlyWhite = Color(0xFFFAFAFA);
+  static const Color nearlyWhite = Color(0xFFE6E6FA); // Very light lavender
   static const Color white = Color(0xFFFFFFFF);
-  static const Color background = Color(0xFFF2F3F8);
-  static const Color nearlyDarkBlue = Color(0xFF2633C5);
+  static const Color background = Color(0xFFF2F3F8); // Light grayish purple
+  static const Color nearlyDarkBlue = Color(0xFF3F2A5C);
 
   static const Color nearlyBlue = Color(0xFF00B6F0);
-  static const Color nearlyBlack = Color(0xFF213333);
-  static const Color grey = Color(0xFF3A5160);
-  static const Color dark_grey = Color(0xFF313A44);
+  static const Color nearlyBlack = Color(0xFF3F2A5C); // Dark purple
+  static const Color grey = Color(0xFF725A9F); // Medium purple
+  static const Color dark_grey = Color(0xFF5E419A); // Darker purple
 
-  static const Color darkText = Color(0xFF253840);
-  static const Color darkerText = Color(0xFF17262A);
-  static const Color lightText = Color(0xFF4A6572);
-  static const Color deactivatedText = Color(0xFF767676);
-  static const Color dismissibleBackground = Color(0xFF364A54);
-  static const Color spacer = Color(0xFFF2F2F2);
+  static const Color darkText = Color(0xFF412B81); // Deep purple
+  static const Color darkerText = Color(0xFF5837A2); // Even deeper purple
+  static const Color lightText = Color(0xFF8D71C8); // Light purple
+  static const Color deactivatedText = Color(0xFFA5A5A5); // Lighter gray
+  static const Color dismissibleBackground = Color(0xFF7C63B6); // Plum purple
+  static const Color spacer = Color(0xFFF2F2F2); // White (unchanged)
+
   static const String fontName = 'Roboto';
 
   static const TextTheme textTheme = TextTheme(

@@ -4,6 +4,7 @@ import 'package:best_flutter_ui_templates/hotel_booking/model/hotel_list_data.da
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart';
+import '../design_course/course_info_screen.dart';
 import '../fitness_app/fitness_app_theme.dart';
 import 'filters_screen.dart';
 import 'hotel_app_theme.dart';
@@ -85,7 +86,6 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                                 getFilterBarUI(),
                               ),
                             ),
-
                           ];
                         },
                         body: Container(
@@ -107,7 +107,13 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                                               curve: Curves.fastOutSlowIn)));
                               animationController?.forward();
                               return HotelListView(
-                                callback: () {},
+                                callback: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              CourseInfoScreen()));
+                                },
                                 hotelData: hotelList[index],
                                 animation: animation,
                                 animationController: animationController!,
@@ -120,7 +126,6 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                   ],
                 ),
               ),
-
             ],
           ),
         ),
@@ -578,7 +583,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                       onTap: () {},
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: SizedBox()/*Icon(Icons.favorite_border)*/,
+                        child: SizedBox() /*Icon(Icons.favorite_border)*/,
                       ),
                     ),
                   ),
@@ -591,7 +596,8 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                       onTap: () {},
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: SizedBox()/*Icon(FontAwesomeIcons.locationDot)*/,
+                        child:
+                            SizedBox() /*Icon(FontAwesomeIcons.locationDot)*/,
                       ),
                     ),
                   ),

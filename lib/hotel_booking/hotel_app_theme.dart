@@ -22,8 +22,8 @@ class HotelAppTheme {
   }
 
   static ThemeData buildLightTheme() {
-    final Color primaryColor = HexColor('#54D3C2');
-    final Color secondaryColor = HexColor('#54D3C2');
+    final Color primaryColor = HexColor('#FF725A9F'); // Medium purple
+    final Color secondaryColor = HexColor('#FF725A9F'); // Medium purple
     final ColorScheme colorScheme = const ColorScheme.light().copyWith(
       primary: primaryColor,
       secondary: secondaryColor,
@@ -36,8 +36,8 @@ class HotelAppTheme {
       splashColor: Colors.white24,
       splashFactory: InkRipple.splashFactory,
       canvasColor: Colors.white,
-      backgroundColor: const Color(0xFFFFFFFF),
-      scaffoldBackgroundColor: const Color(0xFFF6F6F6),
+      backgroundColor: const Color(0xFFFFE6E6FA), // Very light lavender
+      scaffoldBackgroundColor: const Color(0xFFF2F2F2),
       errorColor: const Color(0xFFB00020),
       buttonTheme: ButtonThemeData(
         colorScheme: colorScheme,
